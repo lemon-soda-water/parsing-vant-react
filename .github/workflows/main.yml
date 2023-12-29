@@ -25,7 +25,7 @@ jobs:
             pnpm run format
             pnpm run build
         - name: Deploy
-          uses: JamesIves/github-pages-deploy-action@master
+          uses: JamesIves/github-pages-deploy-action@v4
           with:
             BRANCH: gh-pages 
             FOLDER: dist 
