@@ -1,0 +1,32 @@
+name: Preview Deploy
+
+on: push
+
+jobs:
+    build-and-deploy:
+      name: My first job
+      runs-on: ubuntu-latest
+      steps:
+        - name: Checkout
+          uses: actions/checkout@v4
+          with:
+            persist-credentials: false
+        - name: Prepare Node env
+          uses: actions/setup-node@v4
+          with:
+            node-version: 18
+        - run: |
+            pnpm ci
+            pnpm install
+        - name: dev and build
+          run: |
+            pnpm run test
+            pnpm run lint
+            pnpm run format
+            pnpm run build
+        - name: Deploy
+          uses: JamesIves/github-pages-deploy-action@master
+          with:
+            BRANCH: gh-pages 
+            FOLDER: dist 
+        
