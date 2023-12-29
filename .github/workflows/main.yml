@@ -15,10 +15,8 @@ jobs:
           uses: actions/setup-node@v4
           with:
             node-version: 18
-        - run: |
-            npm install -g pnpm
-            pnpm ci
-            pnpm install
+        - run: npm install -g pnpm
+        - run: pnpm install
         - name: dev and build
           run: |
             pnpm run test
