@@ -16,6 +16,7 @@ jobs:
           with:
             node-version: 18
         - run: |
+            npm install -g pnpm
             pnpm ci
             pnpm install
         - name: dev and build
