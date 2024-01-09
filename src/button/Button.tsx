@@ -8,7 +8,7 @@ import Loading from '../Loading'
 
 const [bem] = createNamespace('button')
 
-const Button: React.FC<ButtonProps> = (props) => {
+const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
   const {
     color,
     loading,
