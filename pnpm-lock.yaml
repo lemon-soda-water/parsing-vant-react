@@ -70,9 +70,6 @@ devDependencies:
   eslint-plugin-react-refresh:
     specifier: ^0.4.5
     version: 0.4.5(eslint@8.56.0)
-  identity-obj-proxy:
-    specifier: ^3.0.0
-    version: 3.0.0
   jest:
     specifier: ^29.7.0
     version: 29.7.0(@types/node@20.10.5)(ts-node@10.9.2)
