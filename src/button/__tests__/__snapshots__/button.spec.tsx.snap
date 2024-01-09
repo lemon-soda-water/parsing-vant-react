@@ -1,0 +1,130 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`button test Successful rendering of the button component 1`] = `
+<button class="rv-button rv-button--default rv-button--normal"
+        type="button"
+>
+  <div class="rv-button__content">
+    <span class="rv-button__text">
+      按钮
+    </span>
+  </div>
+</button>
+`;
+
+exports[`button test should hide border when color is gradient 1`] = `
+<button class="rv-button rv-button--default rv-button--normal"
+        style="color: rgb(255, 255, 255); border: 0px;"
+        type="button"
+>
+  <div class="rv-button__content">
+    <span class="rv-button__text">
+      按钮
+    </span>
+  </div>
+</button>
+`;
+
+exports[`button test should not trigger click event when disabled 1`] = `
+<button disabled
+        class="rv-button rv-button--default rv-button--normal rv-button--disabled"
+        type="button"
+>
+  <div class="rv-button__content">
+    <span class="rv-button__text">
+      按钮
+    </span>
+  </div>
+</button>
+`;
+
+exports[`button test should not trigger click event when loading 1`] = `
+<button class="rv-button rv-button--default rv-button--normal rv-button--loading"
+        type="button"
+>
+  <div class="rv-button__content">
+    <div class="rv-button__loading rv-loading rv-loading--circular">
+      <span class="rv-loading__spinner rv-loading__spinner--circular"
+            style="width: 20px; height: 20px;"
+      >
+        <svg class="rv-loading__circular"
+             viewbox="25 25 50 50"
+        >
+          <circle cx="50"
+                  cy="50"
+                  r="20"
+                  fill="none"
+          >
+          </circle>
+        </svg>
+      </span>
+    </div>
+  </div>
+</button>
+`;
+
+exports[`button test should render loading of a specific size when using loading-size prop 1`] = `
+<button loadingsize="10px"
+        class="rv-button rv-button--default rv-button--normal rv-button--loading"
+        type="button"
+>
+  <div class="rv-button__content">
+    <div class="rv-button__loading rv-loading rv-loading--circular">
+      <span class="rv-loading__spinner rv-loading__spinner--circular"
+            style="width: 10px; height: 10px;"
+      >
+        <svg class="rv-loading__circular"
+             viewbox="25 25 50 50"
+        >
+          <circle cx="50"
+                  cy="50"
+                  r="20"
+                  fill="none"
+          >
+          </circle>
+        </svg>
+      </span>
+    </div>
+  </div>
+</button>
+`;
+
+exports[`button test should render loading slot correctly 1`] = `
+<button class="rv-button rv-button--default rv-button--normal rv-button--loading"
+        type="button"
+>
+  <div class="rv-button__content">
+    <div class="rv-button__loading rv-loading rv-loading--circular">
+      <span class="rv-loading__spinner rv-loading__spinner--circular"
+            style="width: 20px; height: 20px;"
+      >
+        <svg class="rv-loading__circular"
+             viewbox="25 25 50 50"
+        >
+          <circle cx="50"
+                  cy="50"
+                  r="20"
+                  fill="none"
+          >
+          </circle>
+        </svg>
+      </span>
+    </div>
+    <span class="rv-button__text">
+      加载中
+    </span>
+  </div>
+</button>
+`;
+
+exports[`button test should trigger a click event 1`] = `
+<button class="rv-button rv-button--default rv-button--normal"
+        type="button"
+>
+  <div class="rv-button__content">
+    <span class="rv-button__text">
+      按钮
+    </span>
+  </div>
+</button>
+`;
