@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`skeleton test Successful rendering of the skeleton component 1`] = `
+<div class="rv-skeleton rv-skeleton--animate rv-skeleton--round">
+  <div class="rv-skeleton__content">
+    <div class="rv-skeleton__row"
+         style="width: 100%;"
+    >
+    </div>
+    <div class="rv-skeleton__row"
+         style="width: 100%;"
+    >
+    </div>
+    <div class="rv-skeleton__row"
+         style="width: 60%;"
+    >
+    </div>
+  </div>
+</div>
+`;
+
+exports[`skeleton test should change avatar shape when using avatar-shape prop 1`] = `""`;
+
+exports[`skeleton test should change avatar size when using avatar-size prop 1`] = `
+<div class="rv-skeleton rv-skeleton--animate rv-skeleton--round">
+  <div class="rv-skeleton__avatar rv-skeleton__avatar--round"
+       style="width: 20rem; height: 20rem;"
+  >
+  </div>
+  <div class="rv-skeleton__content">
+    <div class="rv-skeleton__row"
+         style="width: 100%;"
+    >
+    </div>
+    <div class="rv-skeleton__row"
+         style="width: 100%;"
+    >
+    </div>
+    <div class="rv-skeleton__row"
+         style="width: 60%;"
+    >
+    </div>
+  </div>
+</div>
+`;
+
+exports[`skeleton test should render props children when loading is false 1`] = `
+<div>
+  Content
+</div>
+`;
+
+exports[`skeleton test should render with row width array correctly 1`] = `
+<div class="rv-skeleton rv-skeleton--animate rv-skeleton--round">
+  <div class="rv-skeleton__content">
+    <div class="rv-skeleton__row"
+         style="width: 100%;"
+    >
+    </div>
+    <div class="rv-skeleton__row"
+         style="width: 30px;"
+    >
+    </div>
+    <div class="rv-skeleton__row"
+         style="width: 5rem;"
+    >
+    </div>
+    <div class="rv-skeleton__row">
+    </div>
+  </div>
+</div>
+`;
