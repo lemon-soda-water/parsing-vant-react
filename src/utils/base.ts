@@ -7,3 +7,12 @@
 export function isDef<T>(val: T): val is NonNullable<T> {
   return val !== undefined && val !== null
 }
+
+/**
+ * @description 判断 val 是否是一个函数
+ * @param val any
+ * @returns boolean
+ */
+export function isFunction(val: any): val is Function {
+  return typeof val === 'function'
+}
