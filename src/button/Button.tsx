@@ -22,6 +22,7 @@ const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
     loadingType,
     nativeType: _nativeType,
     iconPosition: _iconPosition,
+    loadingSize = '20px',
     ...restProps
   } = props
 
@@ -127,7 +128,6 @@ const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
 
   const renderLoadingIcon = () => {
     if (loading) {
-      const { loadingSize = '20px' } = props
       return (
         <Loading
           className={clsx(bem('loading'))}

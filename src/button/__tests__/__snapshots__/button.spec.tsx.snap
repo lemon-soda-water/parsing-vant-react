@@ -64,8 +64,7 @@ exports[`button test should not trigger click event when loading 1`] = `
 `;
 
 exports[`button test should render loading of a specific size when using loading-size prop 1`] = `
-<button loadingsize="10px"
-        class="rv-button rv-button--default rv-button--normal rv-button--loading"
+<button class="rv-button rv-button--default rv-button--normal rv-button--loading"
         type="button"
 >
   <div class="rv-button__content">
